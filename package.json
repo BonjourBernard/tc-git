@@ -1,8 +1,12 @@
 {
   "name": "tcgit",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "git命令行工具",
   "main": "./bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BonjourBernard/tc-git.git"
+  },
   "directories": {
     "lib": "lib"
   },
