@@ -2,13 +2,9 @@
   "name": "tc-git",
   "version": "1.0.1",
   "description": "git命令行工具",
-  "main": "./bin/index.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BonjourBernard/gulp-wxmlmin.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

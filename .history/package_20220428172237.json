@@ -2,7 +2,7 @@
   "name": "tc-git",
   "version": "1.0.1",
   "description": "git命令行工具",
-  "main": "./bin/index.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
