@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BonjourBernard/tc-git.git"
+    "url": "git@github.com:BonjourBernard/tc-git.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
