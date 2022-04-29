@@ -64,20 +64,20 @@ function getType() {
                 value: 'chore',
             },
             {
-                name: '性能优化',
+                name: '优化',
                 value: 'perf',
             },
+            {
+                name: '代码重构',
+                value: 'refactor'
+            }
             {
                 name: '回退',
                 value: 'revert',
             },
             {
-                name: '测试',
+                name: '测试用例修改',
                 value: 'test',
-            },
-            {
-                name: 'bug修复',
-                value: 'bugfix',
             }
         ]
     }
@@ -104,14 +104,14 @@ function getPushDirection(){
 module.exports = async function () {
     try {
         await addAll()
-        const { name } = await getType()
+        const { name, value } = await getType()
         let msg = ''
         while (!msg) {
             msg = await question(`请输入commit message(必填): `.green)
         }
         const tapdUrl = await question(`请输入需求或缺陷tapd地址(选填): `.green)
-        console.log('提交信息：'.yellow + `"${name}：${msg.red} ${tapdUrl ? ('tapd地址：' + tapdUrl.blueBG) : ''}"`)
-        await commitCode(`${name}：${msg} ${tapdUrl ? ('tapd地址：' + tapdUrl) : ''}`)
+        console.log('提交信息：'.yellow + `"${value} (${name}): ${msg.red} ${tapdUrl ? ('tapd地址：' + tapdUrl.blueBG) : ''}"`)
+        await commitCode(`${value} (${name}): ${msg} ${tapdUrl ? ('tapd地址：' + tapdUrl) : ''}`)
         const { value: doPush } = await getPushDirection()
         doPush && await push()
     } catch (e) {

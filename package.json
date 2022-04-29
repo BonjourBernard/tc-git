@@ -1,6 +1,6 @@
 {
   "name": "tcgit",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "git命令行工具",
   "main": "./bin/index.js",
   "repository": {

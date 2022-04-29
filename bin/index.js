@@ -1,3 +1,10 @@
+/*
+ * @Date: 2022-04-28 20:09:50
+ * @Editors: lcy48622
+ * @LastEditors: lcy48622
+ * @LastEditTime: 2022-04-29 21:46:56
+ * @Description: 
+ */
 #!/usr/bin/env node
 require('console-color-mr');
 const createBranch = require('./direction/branch');
@@ -15,7 +22,7 @@ if (!args[0]) {
 console.log(`${args}操作`.green)
 function warnFunc() {
     console.log('无效命令'.red)
-    console.log('请输入：'.yellow + 'yarn git -- '.green + '${命令}'.blue)
+    console.log('请输入：'.yellow + 'tcgit '.green + '${命令}'.blue)
     process.exit(0)
 }
 const direction = args[0].toLowerCase()
