@@ -70,7 +70,7 @@ function getType() {
             {
                 name: '代码重构',
                 value: 'refactor'
-            }
+            },
             {
                 name: '回退',
                 value: 'revert',

@@ -2,10 +2,9 @@
  * @Date: 2022-04-28 20:09:50
  * @Editors: lcy48622
  * @LastEditors: lcy48622
- * @LastEditTime: 2022-04-29 21:46:56
+ * @LastEditTime: 2022-04-29 22:37:31
  * @Description: 
  */
-#!/usr/bin/env node
 require('console-color-mr');
 const createBranch = require('./direction/branch');
 const commit = require('./direction/commit');
